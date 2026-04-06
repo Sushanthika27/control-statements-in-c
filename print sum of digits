@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main()
+{
+   int i,n,c,r,ori,s=0;
+   printf("enter n");
+   scanf("%d",&n);
+   ori=n;
+   while (n>0)
+   {
+      r=n%10;
+      s=s+r;
+      n=n/10;
+   }
+   printf("sum of digit presentin %d is %d",ori,s);
+   return 0;
+}
