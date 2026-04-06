@@ -1,0 +1,30 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+   int n,or,r,s=0,c=0,i=0;
+   printf("enter a number");
+   scanf("%d",&n);
+   or=n;
+   while(n>0)
+   {
+      c=c+1;
+      n=n/10;
+   }
+   n=or;
+   while(n>0)
+   {
+      r=n%10;
+      s=s+pow(r,c);
+      n=n/10;
+   }
+   if(s==or)
+   {
+        printf("n is armstrong number");
+   }
+   else
+   {
+        printf("n is not armstrong number");
+   }
+   return 0;
+}
