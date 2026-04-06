@@ -1,0 +1,18 @@
+#include<stdio.h>
+int main()
+{
+   int T1=0,T2=1,n,res,i;
+   printf("enter n");
+   scanf("%d",&n);
+   printf("enter fibonacci elements:");
+   printf("%d",T1);
+   printf("%d",T2);
+   for(i=1;i<=n;i++)
+   {
+        res=T1+T2;
+        printf("%d",res);
+        T1=T2;
+        T2=res;
+   }
+   return 0;
+}
